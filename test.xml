@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote name="xilinx"  fetch="https://github.com/Xilinx"/>
+
+  <default sync-j="4"/>
+
+  <project remote="xilinx"  revision="rel-v2025.2"      name="yocto-scripts"            path="sources/yocto-scripts">
+       <copyfile dest="setupsdk" src="setupsdk"/>
+  </project>
+  <project remote="xilinx"    revision="rel-v2025.2"      name="yocto-manifests"          path="sources/manifest"/>
+  <project remote="xilinx"    revision="rel-v2025.2"      name="meta-xilinx"              path="sources/meta-xilinx"	sync-s="true"/>
+ 
+</manifest>
